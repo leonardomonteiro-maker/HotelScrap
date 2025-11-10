@@ -36,7 +36,7 @@ BOOKING_DOMAINS = [
 PAGE_CAP = 2000
 
 # Run headful by default to reduce blocking; set to True to run headless
-HEADLESS = False
+HEADLESS = True
 
 # small polite delay between page navigations
 NAV_SLEEP = 0.6
