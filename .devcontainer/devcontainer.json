@@ -1,0 +1,11 @@
+{
+  "name": "playwright-python",
+  "image": "mcr.microsoft.com/playwright/python:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
+}
