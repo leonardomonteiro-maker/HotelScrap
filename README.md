@@ -1,16 +1,22 @@
-# hotels-pt.com scraper (Playwright, Python)
+# Hotels PT Scraper (Playwright + Python)
 
-Purpose: Scrape **all hotels in Portugal** from https://hotels-pt.com and export to Excel.
-Fields: Hotel Name, Official Website (preferred), Region, Rating, Stars.
-Excludes: Hostels, B&Bs, Guesthouses, AirBnB-style listings.
+Purpose: Scrape all hotels in Portugal from https://hotels-pt.com and export to CSV & Excel.
 
-## How to run (GitHub Codespaces)
+Features:
+- Fields: Hotel Name, Region, Stars, Rating, Website (official only, blank if missing), Detail URL
+- Excludes hostels, B&B, guesthouses, Airbnb-style listings
+- Works with all languages (no language forcing)
+- Saves `hotels_portugal.csv` and `hotels_portugal.xlsx`
 
-1. Create a GitHub repo and add the files from this project.
-2. Open the repo in **GitHub Codespaces** (green Code → Open with Codespaces).
-3. In the Codespace terminal run:
+## How to run inside GitHub Codespaces
 
-   ```bash
-   python -m pip install --upgrade pip
-   pip install -r requirements.txt
-   playwright install
+1. Open this repo in **Codespaces**:
+   - Click **Code → Create codespace on main**
+
+2. In the Codespace terminal run these exact commands (copy/paste as a block):
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+playwright install
+python scrape.py
