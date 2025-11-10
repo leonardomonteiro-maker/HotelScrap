@@ -1,6 +1,6 @@
 # scrape.py
 """
-Playwright scraper for hotels-pt.com
+Playwright scraper for https://www.hotels-pt.net/pt/all-hotels/
 Saves hotels_portugal.csv and hotels_portugal.xlsx
 Preferences:
  - Official website only (leave blank if none)
@@ -20,8 +20,8 @@ from tqdm import tqdm
 from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
 
 # === Config ===
-BASE_LISTING_URL = "https://hotels-pt.com/portugal-hotels?page={}"  # pagination template
-SITE_DOMAIN = "hotels-pt.com"
+BASE_LISTING_URL = "https://www.hotels-pt.net/pt/all-hotels/"  # pagination template
+SITE_DOMAIN = "hotels-pt.net"
 
 # Filtering keywords (case-insensitive)
 BANNED_KEYWORDS = ["hostel", "b&b", "bnb", "guesthouse", "guest house", "airbnb", "albergue"]
